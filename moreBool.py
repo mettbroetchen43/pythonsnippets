@@ -16,3 +16,10 @@ def inv(expr):
     Inverts the input signal. A true expression returns false vice-versa.
     '''
     return (not expr)    
+
+def nand(expr1, expr2)
+    '''
+    Compares two expressions and returns whether at least one of them is false.
+    Returns True if at least one of two expressions is false.
+    '''
+    return (not expr1) or (not expr2)
