@@ -24,6 +24,14 @@ def nand(expr1, expr2):
     '''
     return (not expr1) or (not expr2)
 
+def xnand(expr1, expr2):
+    '''
+    Compares two expressions and returns whether one of them is false.
+    Returns True if one of two expressions is false. If both expressions
+    are true or both expressions are false, this function returns False.
+    '''
+    return xor(not expr1, not expr2)
+
 def both(expr1, expr2):
     '''
     Compares two expressions and returns whether both are true. 
