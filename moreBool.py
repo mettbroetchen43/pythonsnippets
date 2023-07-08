@@ -17,7 +17,7 @@ def inv(expr):
     '''
     return (not expr)    
 
-def nand(expr1, expr2)
+def nand(expr1, expr2):
     '''
     Compares two expressions and returns whether at least one of them is false.
     Returns True if at least one of two expressions is false.
