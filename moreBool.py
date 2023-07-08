@@ -56,10 +56,3 @@ def xnand(expr1, expr2):
     '''
     return xor(not expr1, not expr2)
 
-def both(expr1, expr2):
-    '''
-    Compares two expressions and returns whether both are true. 
-    Returns True if both expressions are true.
-    '''
-    return expr1 and expr2
-
