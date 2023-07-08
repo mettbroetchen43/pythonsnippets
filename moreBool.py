@@ -1,7 +1,7 @@
 def xor(expr1, expr2):
     '''
     The exclusive-or logic. One expression (and only one expression!) needs to be true.
-    If both are true, the function returns False.
+    If both are true or both are false, the function returns False.
     '''
     return (expr1 and not expr2) or (expr2 and not expr1)
 
