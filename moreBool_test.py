@@ -1,6 +1,11 @@
 import moreBool
 
 def nl():
+    '''
+    This is meant as a helper function.
+    It's used to create a visual separation between the outputs
+    for improving readability.
+    '''
     print()
 
 str_truefalse = "Based on the input True and False,"
