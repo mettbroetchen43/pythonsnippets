@@ -41,6 +41,15 @@ def nor(expr1, expr2):
     '''
     return inv(expr1) and inv(expr2)
 
+def xnor(expr1, expr2):
+    '''
+    Compares two expressions and returns whether both are True or both are False.
+    Returns True if expr1 and expr2 are True. 
+    Also returns True if expr1 and expr2 are False.
+    Returns False if expr1 is True and expr2 is False vice-versa.
+    '''
+    return (expr1 and expr2) or (inv(expr1) and inv(expr2))
+
 def nand(expr1, expr2):
     '''
     Compares two expressions and returns whether at least one of them is false.
