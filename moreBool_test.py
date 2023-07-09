@@ -4,7 +4,7 @@ def nl():
     '''
     This is meant as a helper function.
     It's used to create a visual separation between the outputs
-    for improving readability.
+    for improving readability of both the output and the code.
     '''
     print()
 
