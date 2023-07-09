@@ -3,6 +3,12 @@ import moreBool
 def nl():
     print()
 
+str_truefalse = "Based on the input True and False,"
+str_falsefalse = "Based on the input False and False,"
+str_truetrue = "Based on the input True and True,"
+str_true = "Based on the input True,"
+str_false = "Based on the input False,"
+
 xor_result_truefalse = moreBool.xor(True, False)
 xor_result_falsefalse = moreBool.xor(False, False)
 xor_result_truetrue = moreBool.xor(True, True)
@@ -23,22 +29,22 @@ xnand_result_falsefalse = moreBool.xnand(False, False)
 xnand_result_truetrue = moreBool.xnand(True, True)
 
 nl()
-print (f'Based on the input True and False, xor() returns {xor_result_truefalse}.')
-print (f'Based on the input False and False, xor() returns {xor_result_falsefalse}.')
-print (f'Based on the input True and True, xor() returns {xor_result_truetrue}.')
+print (f'{str_truefalse} xor() returns {xor_result_truefalse}.')
+print (f'{str_falsefalse} xor() returns {xor_result_falsefalse}.')
+print (f'{str_truetrue} xor() returns {xor_result_truetrue}.')
 nl()
-print (f'Based on the input True, inv() returns {inv_result_true}.')
-print (f'Based on the input False, inv() returns {inv_result_false}.')
+print (f'{str_true} inv() returns {inv_result_true}.')
+print (f'{str_false} inv() returns {inv_result_false}.')
 nl()
-print (f'Based on the input True and False, nor() returns {nor_result_truefalse}.')
-print (f'Based on the input False and False, nor() returns {nor_result_falsefalse}.')
-print (f'Based on the input True and True, nor() returns {nor_result_truetrue}.')
+print (f'{str_truefalse} nor() returns {nor_result_truefalse}.')
+print (f'{str_falsefalse} nor() returns {nor_result_falsefalse}.')
+print (f'{str_truetrue} nor() returns {nor_result_truetrue}.')
 nl()
-print (f'Based on the input True and False, nand() returns {nand_result_truefalse}.')
-print (f'Based on the input False and False, nand() returns {nand_result_falsefalse}.')
-print (f'Based on the input True and True, nand() returns {nand_result_truetrue}.')
+print (f'{str_truefalse} nand() returns {nand_result_truefalse}.')
+print (f'{str_falsefalse} nand() returns {nand_result_falsefalse}.')
+print (f'{str_truetrue} nand() returns {nand_result_truetrue}.')
 nl()
-print (f'Based on the input True and False, xnand() returns {xnand_result_truefalse}.')
-print (f'Based on the input False and False, xnand() returns {xnand_result_falsefalse}.') 
-print (f'Based on the input True and True, xnand() returns {xnand_result_truetrue}.')
+print (f'{str_truefalse} xnand() returns {xnand_result_truefalse}.')
+print (f'{str_falsefalse} xnand() returns {xnand_result_falsefalse}.') 
+print (f'{str_truetrue} xnand() returns {xnand_result_truetrue}.')
 
