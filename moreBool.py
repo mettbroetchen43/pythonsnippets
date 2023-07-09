@@ -29,24 +29,24 @@ def xor(expr1, expr2):
     '''
     return (expr1 and not expr2) or (expr2 and not expr1)
 
-def nor(expr1, expr2):
-    '''
-    Compares two expressions and returns whether both are False. Neither expr1 nor expr2 may be true to return True. 
-    '''
-    return (not expr1) and (not expr2)
-
 def inv(expr):
     '''
     Inverts the input signal. A true expression returns false vice-versa.
     '''
     return (not expr)    
 
+def nor(expr1, expr2):
+    '''
+    Compares two expressions and returns whether both are False. Neither expr1 nor expr2 may be true to return True. 
+    '''
+    return inv(expr1) and inv(expr2)
+
 def nand(expr1, expr2):
     '''
     Compares two expressions and returns whether at least one of them is false.
     Returns True if at least one of two expressions is false.
     '''
-    return (not expr1) or (not expr2)
+    return inv(expr1) or inv(expr2)
 
 def xnand(expr1, expr2):
     '''
@@ -54,5 +54,5 @@ def xnand(expr1, expr2):
     Returns True if one of two expressions is false. If both expressions
     are true or both expressions are false, this function returns False.
     '''
-    return xor(not expr1, not expr2)
+    return xor(inv(expr1), inv(expr2))
 
