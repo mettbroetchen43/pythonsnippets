@@ -42,7 +42,7 @@ def rec(value):
     '''
     Returns the reciprocal of given value.
     '''
-    if isnotstring(value):
+    if isnotstring(value) and isnotzero(value):
        return 1/value
     return None
 
@@ -106,7 +106,7 @@ def mod(val1, val2):
     '''
     Returns the modulo of val1 / val2
     '''
-    if isnotstring(val1) and isnotstring(val2):
+    if isnotstring(val1) and isnotstring(val2) and isnotzero(val2):
         return val1 % val2
     return None
 
