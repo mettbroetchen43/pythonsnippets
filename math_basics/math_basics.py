@@ -74,7 +74,7 @@ def root(val1, val2):
     '''
     Returns the val2. root of val1.
     '''
-    if isnotstring(val1) and isnotstring(val2):
+    if isnotstring(val1) and isnotstring(val2) and isnotzero(val2):
         return pow(val1, rec(val2))
     return None
 
