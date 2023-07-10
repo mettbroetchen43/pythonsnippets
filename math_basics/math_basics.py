@@ -34,6 +34,10 @@ def isnotstring(value):
     '''
     return not isinstance(value, str)
 
+def isnotzero(value):
+    return value < 0 or value > 0
+
+
 def rec(value):
     '''
     Returns the reciprocal of given value.
@@ -135,3 +139,19 @@ def val2oct(value):
         ret = oct(int(value))[2:]
         return ret
     return None
+
+def div(val1, val2):
+    '''
+    I am fully aware that divisions are provided natively
+    by Python, but I find it useful though to introduce 
+    a division functionality. The special about this function 
+    is that it checks whether val2 is not 0, since divisions 
+    by zero are mathematically prohibited.
+    However, this function divides val1 by val2 and returns the
+    result, given the requirements that both values are not strings
+    and val2 is not 0. 
+    '''
+    if isnotstring(val1) and isnotstring(val2) and isnotzero(val2):
+        return val1/val2
+    return None
+
