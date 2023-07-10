@@ -29,6 +29,13 @@ def isBool(expr):
     '''
     return isinstance(expr, bool)
 
+def inv(expr):
+    '''
+    Inverts the input signal. A true expression returns false vice-versa.
+    '''
+    if isBool(expr):
+        return (not expr)    
+
 def xor(expr1, expr2):
     '''
     The exclusive-or logic. One expression (and only one expression!) needs to be true.
@@ -36,14 +43,7 @@ def xor(expr1, expr2):
     '''
 
     if isBool(expr1) and isBool(expr2):
-        return (expr1 and not expr2) or (expr2 and not expr1)
-
-def inv(expr):
-    '''
-    Inverts the input signal. A true expression returns false vice-versa.
-    '''
-    if isBool(expr):
-        return (not expr)    
+        return (expr1 and inv(expr2)) or (expr2 and inv(expr1))
 
 def nor(expr1, expr2):
     '''
