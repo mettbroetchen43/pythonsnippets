@@ -58,8 +58,9 @@ def sqrt(value):
     '''
     Returns the Square Root of val
     '''
-    if isnotstring(value):
-        return pow(value, 0.5)
+    if isnotstring(value) and isnotzero(value):
+        if value > 0:
+            return pow(value, 0.5)
     return None
 
 def cbrt(value):
@@ -75,7 +76,8 @@ def root(val1, val2):
     Returns the val2. root of val1.
     '''
     if isnotstring(val1) and isnotstring(val2) and isnotzero(val2):
-        return pow(val1, rec(val2))
+        if val1 > 0: 
+            return pow(val1, rec(val2))
     return None
 
 def addPercent(val1, val2):
