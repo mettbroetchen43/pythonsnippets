@@ -135,7 +135,3 @@ def val2oct(value):
         ret = oct(int(value))[2:]
         return ret
     return None
-
-
-if __name__=='__main__':
-    print (getPercent(0.50, 50))
